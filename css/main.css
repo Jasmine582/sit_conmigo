@@ -309,9 +309,11 @@ input[type=button] {
 }
 
 
+/*-------------------------- Footer ----------------------------*/
 
-
-
+.footer {
+  background-color: var(--clr3);
+}
 
 
 
