@@ -256,6 +256,7 @@ Colors
 --clr3:#6D5A34;
 --clr4:#85A76B;
 */
+
 .top-mission {
   color:var(--clr2);
   font-size: 42px;
@@ -265,8 +266,6 @@ Colors
   font-weight:lighter;
   display: flex;
 }
-
-
 
 .products .wrapper {
   display: flex;
@@ -448,28 +447,25 @@ input[type=button] {
     width: 100%;
   }
 
- 
-
   .top-mission p {
     margin-left:1.2em;
     font-size: 3.75rem;
     line-height:59px;
-  
-  }
-   /*chairs*/
-   .products {
-    box-shadow: none;
   }
 
   .products .wrapper {
     flex-flow: row wrap;
     justify-content: space-around;
   }
+   /*chairs*/
+   .products {
+    box-shadow: none;
+  }
 
-  .chair1 h3 {
-    display:flex;
+  .left h3 {
+    display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+ 
   }
   
   .chair1,
@@ -477,7 +473,6 @@ input[type=button] {
   .chair3,
   .chair4 {
     border: 1px solid #85A76B;
-
 }
 
  .chair1 p,
