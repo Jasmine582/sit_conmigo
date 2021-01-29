@@ -298,8 +298,82 @@ input[type=button] {
 
 
 /*-------------------------- Footer ----------------------------*/
+.bottom-mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  color:var(--clr2);
+  font-family: var(--ff2);
+  font-size: 1.75em;
+  font-weight: 700;
+}
+
+.bottom-mission p {
+  text-align:center;
+  padding: 10px;
+}
+
+.image {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-sec {
+  font-size: 1em;
+  color:var(--clr2);
+  font-family: var(--ff2); 
+}
+
+.commitment {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  font-size: .95em;
+  letter-spacing:.2rem;
+  font-weight: 700;
+  padding: 20px 50px 0px 50px;
+  color:var(--clr2);
+  font-family: var(--ff2);
+}
+
+.readmore {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat, .arrow {
+  display:flex;
+  justify-content:flex-end;
+  margin-bottom: 20px;
+}
+
+.signature {
+  font-family: var(--ff4);
+  font-size: 1.2em;
+}
+
+.divider1, .divider2, .divider3 {
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+footer {
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
 
 .footer {
+  display:flex;
+  justify-content: space-around;
   background-color: var(--clr3);
 }
 
