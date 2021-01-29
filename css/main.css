@@ -1,4 +1,4 @@
-*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
@@ -256,6 +256,7 @@ Colors
 --clr3:#6D5A34;
 --clr4:#85A76B;
 */
+
 .top-mission {
   color:var(--clr2);
   font-size: 42px;
@@ -263,50 +264,37 @@ Colors
   padding:1.12em;
   /*margin:1.3em;*/
   font-weight:lighter;
-}
-
-.wrapper {
   display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
 }
 
-.products {
-  border: 1px solid var(--clr4);
+.products  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: 10px 0px 10px #85a76b;
   margin-top:3em;
 }
 
-.products-divider1,
-.products-divider3 {
-  height:2px;
-  margin:.2em 0;
-  background: var(--clr2);
+.chair {
+  flex: 1 1 150px;
+  margin: 5px;
 }
 
-.products-divider2 {
- height:2px;
- margin:.1em 0;
- background: var(--clr4);
-}
 
-.products h3 {
-  margin-left: 3.5em;
-  border:1px #707070;
-  color:#707070;
-  font-size:1.75rem;
-}
+
 
 input[type=button] {
   margin-left:6.5em;
   margin-top: 2em;
-  border-radius:4px;
+  border-radius:7px;
   background:var(--clr4);
   color: #EEEEEE;
   padding: 15px;
   text-transform:uppercase;
   margin-bottom:4rem ;
+  box-shadow:5px 5px 5px #777777;
 }
+
 
 
 /*-------------------------- Footer ----------------------------*/
@@ -483,8 +471,17 @@ footer {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+   @media only screen and (max-width: 35em) { /*For smaller screens*/
+      /* ------- Products Section -------- */
+    .top-mission figure,
+    .chair p
+      { 
+     display:none;
+    }
 
-@media only screen and (min-width: 35em) {
+    }
+
+@media only screen and (min-width: 768px) and (max-width:1199px) {
   /* Style adjustments for viewports that meet the condition */
    
     /* Tablet styles here */ 
@@ -496,16 +493,91 @@ footer {
     width: 95%;
   }
 
-   figure img {
+    /* ------- Products Section -------- */
+    .chair p {
+    display:none;
+
+   }
+
+    /*top mission*/
+   .top-mission figure {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
   }
-   
-   
+
+  .top-mission p {
+    margin-left:1.2em;
+    font-size: 3.75rem;
+    line-height:59px;
+  }
+ /*chairs*/
+ 
+  .products {
+    box-shadow: none;
+  }
+
+
+
+
+
+
+/* ------- END Products Section -------- */
+
+
 }
+
+@media only screen and (min-width:1200px) {
+  /*Desktop styles here*/
+
+
+  /* ------- Products Section -------- */
+
+/*top mission*/
+.top-mission figure {
+  width: 78%;
+}
+
+.top-mission p {
+  margin-left:1.2em;
+  font-size: 5.75rem;
+  line-height:5.625rem;
+}
+
+.products {
+  box-shadow: none;  
+}
+
+/*CHAIRS*/
+
+  .chair1,
+  .chair2,
+  .chair3,
+  .chair4 {
+  border: 1px solid #85A76B;
+}
+
+  .chair1 p,
+  .chair2 p,
+  .chair3 p,
+  .chair4 p  { 
+   font-size: 1.125rem;
+  }
+
+  /* ------- END Products Section -------- */
+
+
+
+
+
+
+
+
+
+}
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
@@ -588,4 +660,3 @@ footer {
     page-break-after: avoid;
   }
 }
-
