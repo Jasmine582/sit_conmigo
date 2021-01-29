@@ -267,37 +267,21 @@ Colors
   display: flex;
 }
 
-.products .wrapper {
+.products  {
   display: flex;
-  flex-flow: column;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-}
-
-.products {
   box-shadow: 10px 0px 10px #85a76b;
   margin-top:3em;
 }
 
-.products-divider1,
-.products-divider3 {
-  height:2px;
-  margin:.2em 0;
-  background: var(--clr2);
+.chair {
+  flex: 1 1 150px;
+  margin: 5px;
 }
 
-.products-divider2 {
- height:2px;
- margin:.1em 0;
- background: var(--clr4);
-}
 
-.products h3 {
-  margin-left: 3.5em;
-  border:1px #707070;
-  color:#707070;
-  font-size:1.75rem;
-}
+
 
 input[type=button] {
   margin-left:6.5em;
@@ -310,6 +294,7 @@ input[type=button] {
   margin-bottom:4rem ;
   box-shadow:5px 5px 5px #777777;
 }
+
 
 
 /*-------------------------- Footer ----------------------------*/
@@ -415,10 +400,8 @@ input[type=button] {
    @media only screen and (max-width: 35em) { /*For smaller screens*/
       /* ------- Products Section -------- */
     .top-mission figure,
-    .chair1 p,
-    .chair2 p,
-    .chair3 p,
-    .chair4 p  { 
+    .chair p
+      { 
      display:none;
     }
 
@@ -437,6 +420,10 @@ input[type=button] {
   }
 
     /* ------- Products Section -------- */
+    .chair p {
+    display:none;
+
+   }
 
     /*top mission*/
    .top-mission figure {
@@ -452,53 +439,21 @@ input[type=button] {
     font-size: 3.75rem;
     line-height:59px;
   }
-
-  .products .wrapper {
-    flex-flow: row wrap;
-    justify-content: space-around;
-  }
-   /*chairs*/
-   .products {
+ /*chairs*/
+ 
+  .products {
     box-shadow: none;
   }
 
-  .left h3 {
-    display: flex;
-    flex-flow: row wrap;
- 
-  }
-  
-  .chair1,
-  .chair2,
-  .chair3,
-  .chair4 {
-    border: 1px solid #85A76B;
-}
 
- .chair1 p,
- .chair2 p,
- .chair3 p,
- .chair4 p  { 
-     display:none;
-    }
+
+
+
+
 /* ------- END Products Section -------- */
 
 
-
-
-
-
-
-
-
-
-
-
-  }
-
-
-
-
+}
 
 @media only screen and (min-width:1200px) {
   /*Desktop styles here*/
@@ -548,20 +503,6 @@ input[type=button] {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media print,
