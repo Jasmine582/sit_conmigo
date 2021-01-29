@@ -243,29 +243,17 @@ figure img {
   width: 80%;
   
 }
-/* --------------------- Products Section ------------------- */
-/* Fonts
---ff1:'Tenor Sans', sans-serif;
---ff2:'Nunito', sans-serif;
---ff3: 'Montserrat', sans-serif;
---ff4:'Nothing You Could Do', cursive;
---ff5:'Roboto', sans-serif;
-Colors
---clr1:#FFFFFF;
---clr2:#707070;
---clr3:#6D5A34;
---clr4:#85A76B;
-*/
+/* -------------- Products Section ---------------- */
 
 .top-mission {
   color:var(--clr2);
   font-size: 42px;
   font-family:var(--ff2);
   padding:1.12em;
-  /*margin:1.3em;*/
   font-weight:lighter;
   display: flex;
 }
+
 
 .products  {
   display: flex;
@@ -280,8 +268,9 @@ Colors
   margin: 5px;
 }
 
-
-
+.chair h3 {
+  margin-left: 6.5em;
+}
 
 input[type=button] {
   margin-left:6.5em;
@@ -376,12 +365,6 @@ footer {
   justify-content: space-around;
   background-color: var(--clr3);
 }
-
-
-
-
-
-
 
  
 /* ==========================================================================
@@ -494,12 +477,6 @@ footer {
   }
 
     /* ------- Products Section -------- */
-    .chair p {
-    display:none;
-
-   }
-
-    /*top mission*/
    .top-mission figure {
     display: flex;
     flex-flow: column wrap;
@@ -513,18 +490,23 @@ footer {
     font-size: 3.75rem;
     line-height:59px;
   }
+
  /*chairs*/
- 
+ .chair p {
+  display:none;
+
+ }
+
   .products {
     box-shadow: none;
   }
 
+  .chair {
+
+    border: 1px solid #85A76B;
+  }
 
 
-
-
-
-/* ------- END Products Section -------- */
 
 
 }
@@ -535,7 +517,6 @@ footer {
 
   /* ------- Products Section -------- */
 
-/*top mission*/
 .top-mission figure {
   width: 78%;
 }
@@ -550,33 +531,19 @@ footer {
   box-shadow: none;  
 }
 
-/*CHAIRS*/
-
-  .chair1,
-  .chair2,
-  .chair3,
-  .chair4 {
-  border: 1px solid #85A76B;
-}
-
-  .chair1 p,
-  .chair2 p,
-  .chair3 p,
-  .chair4 p  { 
+  .chair { 
    font-size: 1.125rem;
+   display:flex;
+   justify-content: column wrap;
+   border: 1px solid #85A76B;
   }
 
-  /* ------- END Products Section -------- */
+
+  
+
+  }
 
 
-
-
-
-
-
-
-
-}
 
 
 @media print,
