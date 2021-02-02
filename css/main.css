@@ -351,6 +351,7 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   text-align:center;
+  line-height: 1.20em;
   font-size: .95em;
   letter-spacing:.2rem;
   font-weight: 700;
@@ -363,42 +364,78 @@ input[type=button] {
   display:flex;
   justify-content: center;
   align-items: center;
+  margin-right: 100px;
 }
 
 .chat, .arrow {
+  width: 95%;
   display:flex;
   justify-content:flex-end;
   margin-bottom: 20px;
 }
 
 .signature {
+  padding-top: 10px;
   font-family: var(--ff4);
   font-size: 1.2em;
 }
 
 .divider1, .divider2, .divider3 {
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
+  margin-left: 20px;
 }
 
-footer {
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
+.divider3 {
+  margin-bottom: 18px;
 }
 
 .footer {
   display:flex;
-  justify-content: space-around;
+  flex-flow:row wrap;
+  justify-content: flex-start;
+  align-items:center;
   background-color: var(--clr3);
+  width: 90%;
+  margin-left: 20px;
+  height: 130px;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
+.footer-logo {
+  padding: 0;
+}
 
+.nav2 nav ul{
+  display:flex;
+  flex-flow:column wrap;
+  justify-content: center;
+  color:var(--clr1);
+  font-size: 1.5em;
+}
 
+.newsletter {
+  display:none;
+}
 
+.social {
+  display:flex;
+  flex-flow: row wrap;
+  margin-left: 270px;
+  margin-right: 5em;
+  margin-top: -120px;
+  padding-right: 1px;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.social a {
+  margin-left: 1.5em;
+}
+
+.nav2 ul li a{
+  color: var(--clr1);
+  font-size: 1.25em;
+}
 
 
  
