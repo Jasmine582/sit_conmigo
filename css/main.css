@@ -263,12 +263,9 @@ figure img {
   margin-top:3em;
 }
 
-.chair {
-  flex: 1 1 150px;
-  margin: 5px;
-}
 
-.chair h3 {
+.chair1 h3,
+.chair2 h3 {
   margin-left: 6.5em;
 }
 
@@ -457,7 +454,8 @@ footer {
    @media only screen and (max-width: 35em) { /*For smaller screens*/
       /* ------- Products Section -------- */
     .top-mission figure,
-    .chair p
+    .chair2 p,
+    .chair1 p
       { 
      display:none;
     }
@@ -476,6 +474,9 @@ footer {
     width: 95%;
   }
 
+
+
+
     /* ------- Products Section -------- */
    .top-mission figure {
     display: flex;
@@ -491,34 +492,71 @@ footer {
     line-height:59px;
   }
 
- /*chairs*/
- .chair p {
-  display:none;
-
- }
-
   .products {
     box-shadow: none;
+    display:flex;
   }
 
-  .chair {
+ /*chairs*/
 
-    border: 1px solid #85A76B;
+ .chair1 p,
+ .chair2 p {
+  display:none;
+ }
+
+  .chair1 {
+    justify-content: space-between;
+    align-items: center;
+    width:17.6em;
+    margin-bottom:3em;
   }
 
+  .chair1 img {
+    margin-right: .6em;
+    margin-bottom:-10em;
+  }
 
+  .chair1 h3 {
+    margin-left: .95em;
+    margin-bottom: 2em;
+  }
 
+  .chair2 {
+
+    width: 14.6em;
+    margin: 3em;
+  }
+
+  .chair2 img {
+    margin-right: -30em;
+    margin-bottom:-10em;
+  }
+  
+  .chair2 h3 {
+    margin-left: 1em;
+    margin-bottom: 3em;
+
+  }
+
+  input[type=button] {
+    margin-top: 70px;
+  }
 
 }
+
 
 @media only screen and (min-width:1200px) {
   /*Desktop styles here*/
 
 
+
+
+
   /* ------- Products Section -------- */
 
 .top-mission figure {
-  width: 78%;
+    width: 58%;
+  
 }
 
 .top-mission p {
@@ -529,17 +567,76 @@ footer {
 
 .products {
   box-shadow: none;  
+
 }
 
-  .chair { 
-   font-size: 1.125rem;
-   display:flex;
-   justify-content: column wrap;
-   border: 1px solid #85A76B;
-  }
+.chair1 img {
+  margin-left: 40em;
+  width: 45%;
+}
+
+.chair1 h3 {
+  margin-left: 40em;/*50em*/
+  margin-top: 1em;
+  font-size:1.45rem;
+}
+
+.chair1 p {
+  margin-right: 33em;
+  margin-top:-24%;
+  padding:5%;
+  margin-left:3em;
+  font-size:1.125rem;
+  line-height:1.4em;
+}
+
+input[type=button] {
+  margin-top: 7px;
+  margin-right:23em;
+}
 
 
-  
+.chair1,
+.chair2 {
+  border: 1px solid #85A76B;
+
+}
+
+.chair2 img {
+  width: 45%;
+}
+
+.chair2 h3 {
+  margin-top: -2em;
+  margin-left:10em;
+  font-size:1.45rem;
+}
+
+.chair2 p {
+  margin-left: 33em;
+  margin-top:-20%;
+  padding:5%;
+  font-size:1.125rem;
+  line-height:1.4em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   }
 
