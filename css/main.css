@@ -570,7 +570,6 @@ input[type=button] {
   }
 
   .chair2 {
-
     width: 14.6em;
     margin: 3em;
   }
@@ -651,7 +650,7 @@ input[type=button] {
 }
 
 .chair2 img {
-  width: 45%;
+  width:40%;
 }
 
 .chair2 h3 {
@@ -666,6 +665,11 @@ input[type=button] {
   padding:5%;
   font-size:1.125rem;
   line-height:1.4em;
+}
+
+input[type=button2] {
+  margin-top: 7px;
+  margin-right:23em;
 }
 
 
