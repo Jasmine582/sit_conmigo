@@ -375,7 +375,6 @@ input[type=button] {
   margin-bottom: 0;
 }
 
-
 .footer-logo {
   padding: 0;
 }
@@ -395,10 +394,10 @@ input[type=button] {
 .social {
   display:flex;
   flex-flow: row wrap;
-  margin-left: 270px;
+  /* margin-left: 270px;
   margin-right: 5em;
   margin-top: -120px;
-  padding-right: 1px;
+  padding-right: 1px; */
   justify-content: space-between;
   align-items: center;
 }
@@ -407,7 +406,7 @@ input[type=button] {
   margin-left: 1.5em;
 }
 
-.nav2 ul li a{
+.nav2 ul li a {
   color: var(--clr1);
   font-size: 1.25em;
 }
