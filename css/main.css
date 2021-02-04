@@ -142,7 +142,7 @@ body {
    nav {
      color:var(--clr2);
      font-family:var(--ff2);
-     font-size:.5rem;
+   
    }
 
    ul {
@@ -151,7 +151,7 @@ body {
   
     .logo p {
      color:var(--clr3);
-     font-size: .5rem;
+     font-size: .75rem;
     }
 
     /*MAIN*/
@@ -184,27 +184,42 @@ body {
     }
 
 /* --------------------- Mobile Styles - Homepage ------------------- */
-
 header .content-wrapper {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  width: 98%;
 }
 
 nav ul {
   display: flex;
-  margin: 3em 0;
+  font-size: 1em;
 }
 
 nav ul li {
   margin: .5em;
 }
 
+.logo .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.logo p {
+  margin-top: 1rem;
+}
+
+.logo img {
+  margin: 0 .75rem;
+}
 
 .divider1, .divider2, .divider3 {
   width: 90%;
 } 
+
 
 /* --------------------- Hero Section ------------------- */
 
@@ -213,36 +228,44 @@ nav ul li {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 95%;
 
 }
 
 .hero h1,
 h2 {
   margin-bottom: .15em;
+  font-size: 2rem;
 }
 
 .hero p {
-  font-size: 1.5em;
+  font-size: 1.47em;
   justify-content: center;
   align-items: center;
+  margin-bottom: .5em;
 }
 
-figure img {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  padding-left: 3rem;
+.hero-image {
+    background-image: url('../img/hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 350px;
+    height: 200px;
+ }
+
+.hero .para1 {
+  font-size: 1.44em;
+  margin-bottom: -1.5em;
 }
 
-.section1 p {
-  display: flex;
-  flex-flow: column wrap;
-  width: 80%;
-  
+.hero button {
+  margin-left: 10em;
+  padding: 10px 20px;
+  font-size: .75em;
+
 }
+
 /* -------------- Products Section ---------------- */
 
 .top-mission {
@@ -510,6 +533,8 @@ input[type=button]  {
    Modify as content requires.
    ========================================================================== */
    @media only screen and (max-width: 35em) { /*For smaller screens*/
+    
+       
       /* ------- Products Section -------- */
     .top-mission figure,
     .chair2 p,
@@ -524,15 +549,85 @@ input[type=button]  {
    
     /* Tablet styles here */ 
 
-   .hero p {
+    header .content-wrapper {
     display: flex;
-    font-size: 1.15em;
+    flex-flow: row wrap;
     justify-content: center;
-    width: 95%;
+    align-items: center;
   }
 
+   nav ul {
+    margin-right: 2.5em;
+    margin-bottom: 1em;
 
+  }
 
+   nav ul li {
+    margin: 0 .7.5em;
+    font-size: 1.5em;
+  }
+
+  .logo p {
+    font-size: 1.5em;
+  }
+
+  .pre-order {
+    margin-left: 4em;
+    margin-bottom: 1em;
+    padding: .5em 1em;
+  }
+
+  .divider1, .divider2, .divider3 {
+    width: 85%;
+  } 
+
+ .divider3 {
+    margin-bottom: 1.5em;
+  } 
+
+  .hero-image {
+    background-size: contain;
+    width: 95%;
+    height: 500px;
+    margin-top: -9.5em;
+    margin-bottom: -3.5em;
+    margin-left: 2em;
+ }
+
+  .hero h1 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-right: 60%;
+  }
+
+  .hero h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-right: 53%;
+
+  }
+  
+  .hero p {
+    font-size: 1em;
+    margin-right: 14%;
+  }
+
+  p.para {
+    margin: 0;
+  }
+  
+ .hero .para1 {
+   font-size: 3.2em;
+   width: 92%;
+   margin-left: 1em;
+
+  }
+  
+  .hero button {
+    margin: 3em 0 0 30em;
+    padding: 20px 50px;
+    font-size: 1em;
+  }
 
     /* ------------------- Products Section ------------------------- */
    .top-mission figure {
@@ -608,10 +703,90 @@ input[type=button]  {
 
 @media only screen and (min-width:1200px) {
   /*Desktop styles here*/
+ header .content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5em;
+  }
 
+   nav ul {
+    margin-right: 5em;
+    margin-bottom: 1.5em;
 
+  }
 
+   nav ul li {
+    font-size: 3em;
+  }
 
+  .logo .content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+  .logo p {
+    font-size: 3em;
+    
+  }
+  
+  .logo img {
+    height: 150px;
+    width: 100px;
+    margin: 0 1.75rem;
+  }
+
+  .pre-order {
+    margin-left: 20em;
+    margin-bottom: 1.5em;
+    padding: .5em 1em;
+  }
+
+  .divider3 {
+    margin-bottom: 8.5em;
+  } 
+
+  .hero-image {
+    background-size: cover;
+    height: 1300px;
+    margin: -20em 0 0 3em;
+ }
+
+ .hero h1 {
+  font-size: 2.5rem;
+  margin-right: 63%;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-right: 58%;
+
+}
+
+.hero p {
+  font-size: 2.5em;
+  margin-right: 28.5%;
+}
+
+p.para {
+  margin: 0;
+}
+
+.hero .para1 {
+  font-size: 1.8em;
+  margin: 1em 0 -4em 3em;
+ }
+
+.hero button {
+  margin-left: 75em;
+  padding: 25px 75px;
+  font-size: 1.5em;
+  
+  }
 
   /* ---------------- Products Section ------------------- */
 
