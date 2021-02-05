@@ -137,6 +137,10 @@
       margin:.1em 0;
       background: var(--clr4);
      }
+
+     img {
+      width: 100%;
+    }
   
        /*Header Styles*/
      nav {
@@ -178,14 +182,9 @@
         font-size:2.7rem;
         margin-left:1.2em;
       }
-      /*products*/
-      .chair1{
-        margin-top:2em;
-      }
      
-     img {
-        width: 100%;
-     }
+     
+  
   
      /* --------------------- Mobile Styles - Homepage ------------------- */
      header .content-wrapper {
@@ -709,6 +708,8 @@
       margin-top: 2.6em;
      
     }
+
+
     /*------------------- About section -----------------*/
   
     .bottom-mission {
@@ -1054,35 +1055,6 @@
       display: flex;
       width: 100%;
     }
-  
-  .chair2 {
-    border:1px solid #85a76b;
-    margin-left:-3.5em;
-  }
-  
-  .chair2 h3 {
-    margin-top: -1.2em;
-    margin-left:7.5em;
-    font-size:28px;
-  }
-  
-  .chair2 img {
-    width:40%;
-  }
-  
-  .chair2 p {
-    margin-left: 33em;
-    margin-top:-20%;
-    padding:5%;
-    font-size:18px;
-    line-height:1.4em;
-  }
-  
-  .chair2 input[type=button] {
-    margin-top: 7px;
-    margin-left:49em;
-  }
-  
   
     .divider1, .divider2, .divider3 {
       width: 120%;
