@@ -783,7 +783,8 @@ input[type=button] {
   }
 
   .newchair {
-    margin-left: 30%;
+    display:inherit;
+    margin-left: 60%;
   }
 
   .desktopsign{
@@ -802,18 +803,39 @@ input[type=button] {
   .commitment {
     display:flex;
     flex-flow:row;
-    width: 50%;
+    width: 300%;
+  }
+
+  .commitment p {
+    line-height: 1;
+    font-size: 2em;
+    padding: 50px;
+    margin-top: 50px;
+    margin-left: -220px;
   }
 
    .commit-hdr h5 {
    display:inherit;
    font-size: 2.5em;
-   width: 100%;
+   width: 500%;
    padding-left: 10px;
+   padding-top: 1em;
+   padding-left: 1em;
+   font-family: Georgia;
+   font-size: 2.75em;
+   font-weight: 400;
+  }
+
+  .readmore {
+    margin-left: 90%;
   }
 
   .signature {
     display:none;
+  }
+
+  footer {
+    padding-top: 50px;
   }
 
   .about-sec {
@@ -823,8 +845,9 @@ input[type=button] {
     width: 90%;
   }
 
-  .about-sec {
-
+  .aboutit {
+    display: flex;
+    width: 100%;
   }
 
   .divider1, .divider2, .divider3 {
