@@ -326,6 +326,7 @@
   
   
   /*-------------------------- Footer ----------------------------*/
+  
   .bottom-mission {
     display: flex;
     justify-content: center;
@@ -345,6 +346,10 @@
   .bottom-mission p {
     line-height: 1.5em;
     padding: 10px;
+  }
+
+  .bottom-mission span {
+    padding-left: 10px;
   }
   
   .image {
@@ -386,7 +391,15 @@
     align-items: center;
     margin-right: 100px;
   }
+
+  .arrow img {
+    width: 50px;
+  }
   
+  .chat img {
+    width: 50px;
+  }
+
   .chat, .arrow {
     width: 95%;
     display:flex;
@@ -424,7 +437,7 @@
     background-color: var(--clr3);
     width: 90%;
     margin-left: 20px;
-    height: 170px;
+    height: 200px;
     margin-top: 20px;
     margin-bottom: 0;
   }
@@ -438,7 +451,7 @@
     flex-flow:column wrap;
     justify-content: center;
     color:var(--clr1);
-    font-size: 1.5em;
+    font-size: .75em;
   }
   
   .newsletter, .ordernow {
@@ -448,10 +461,6 @@
   .social {
     display:flex;
     flex-flow: row wrap;
-    /* margin-left: 270px;
-    margin-right: 5em;
-    margin-top: -120px;
-    padding-right: 1px; */
     justify-content: space-between;
     align-items: center;
   }
@@ -459,10 +468,19 @@
   .social a {
     margin-left: 1.5em;
   }
+
+  .social img {
+    width: 10px;
+  }
   
   .nav2 ul li a {
     color: var(--clr1);
-    font-size: 1.25em;
+    font-size: 1.5em;
+  }
+
+  .nav2 a {
+    margin-left: -40px;
+    margin-bottom: 0;
   }
    
   /* ==========================================================================
