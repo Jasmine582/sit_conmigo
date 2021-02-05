@@ -182,9 +182,13 @@ body {
     .chair1{
       margin-top:2em;
     }
+   
+   img {
+      width: 100%;
+   }
 
-/* --------------------- Mobile Styles - Homepage ------------------- */
-header .content-wrapper {
+   /* --------------------- Mobile Styles - Homepage ------------------- */
+   header .content-wrapper {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -261,16 +265,14 @@ h2 {
  }
 
 .hero .para1 {
-  font-size: 1.44em;
-  margin-bottom: -1.5em;
+  font-size: 1.41em;
 }
 
 .hero button {
-  margin: 0 0 1em 10em;
-  width: 100px;
-  padding: 8px;
+  margin: 0 0 1em 11em;
+  width: 120px;
+  padding: 5px;
   font-size: .75em;
-
 }
 
 /* -------------- Products Section ---------------- */
