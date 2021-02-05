@@ -186,19 +186,20 @@ body {
 /* --------------------- Mobile Styles - Homepage ------------------- */
 header .content-wrapper {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
+  flex-flow: row nowrap;
+  justify-content: space-between;
   align-items: center;
-  width: 98%;
+  width: 95%;
 }
 
 nav ul {
   display: flex;
-  font-size: 1em;
+  margin: 0 0 2em 2em;
+  font-size: .75em;
 }
 
 nav ul li {
-  margin: .5em;
+  margin: 1em 0 0 .5em;
 }
 
 .logo .content-wrapper {
@@ -208,12 +209,17 @@ nav ul li {
 
 }
 
-.logo p {
-  margin-top: 1rem;
+.logo img {
+  width: 5.5em;
+  margin: 0 0 0 1em;
 }
 
-.logo img {
-  margin: 0 .75rem;
+button.pre-order1 {
+  margin: 0 2em 2em  0;
+  width: 70px;
+  padding: 3px;
+  font-size: .75em;
+
 }
 
 .divider1, .divider2, .divider3 {
@@ -260,8 +266,9 @@ h2 {
 }
 
 .hero button {
-  margin-left: 10em;
-  padding: 10px 20px;
+  margin: 0 0 1em 10em;
+  width: 100px;
+  padding: 8px;
   font-size: .75em;
 
 }
@@ -561,49 +568,37 @@ input[type=button]  {
    
     /* Tablet styles here */ 
 
-    header .content-wrapper {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-   nav ul {
-    margin-right: 2.5em;
-    margin-bottom: 1em;
-
-  }
-
-   nav ul li {
-    margin: 0 .7.5em;
+  nav ul li {
     font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  .logo img {
+    width: 8.5em;
+    margin: 0 0 -1.5em 3.5em;
   }
 
   .logo p {
     font-size: 1.5em;
   }
-
-  .pre-order {
-    margin-left: 4em;
-    margin-bottom: 1em;
-    padding: .5em 1em;
+  
+  button.pre-order1 {
+    margin: 0 7em 2em  0;
+    width: 80px;
+    padding: 3px;
+  
   }
-
-  .divider1, .divider2, .divider3 {
-    width: 85%;
-  } 
-
+  
  .divider3 {
     margin-bottom: 1.5em;
   } 
 
   .hero-image {
     background-size: contain;
-    width: 95%;
+    justify-content: center;
+    width: 100%;
     height: 500px;
-    margin-top: -9.5em;
-    margin-bottom: -3.5em;
-    margin-left: 2em;
+    margin: -9.5em 0 -3.5em 0;
  }
 
   .hero h1 {
@@ -615,13 +610,13 @@ input[type=button]  {
   .hero h2 {
     font-size: 1rem;
     font-weight: 700;
-    margin-right: 53%;
+    margin-right: 53.1%;
 
   }
   
   .hero p {
     font-size: 1em;
-    margin-right: 14%;
+    margin-right: 14.1%;
   }
 
   p.para {
@@ -636,8 +631,9 @@ input[type=button]  {
   }
   
   .hero button {
-    margin: 3em 0 0 30em;
-    padding: 20px 50px;
+    margin: 2em 0 .5em 25em;
+    width: 150px;
+    padding: 10px;
     font-size: 1em;
   }
 
@@ -789,90 +785,94 @@ input[type=button]  {
 
 @media only screen and (min-width:1200px) {
   /*Desktop styles here*/
- header .content-wrapper {
+header .content-wrapper {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    margin-top: 1.5em;
+    max-width: 80%;
   }
-
-   nav ul {
-    margin-right: 5em;
-    margin-bottom: 1.5em;
-
-  }
-
-   nav ul li {
-    font-size: 3em;
-  }
-
-  .logo .content-wrapper {
+  
+  nav ul {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-  
+    margin: 0 0 2em 13em;
+    font-size: 1.5em;
   }
 
-  .logo p {
-    font-size: 3em;
-    
-  }
-  
   .logo img {
-    height: 150px;
+    width: 15.5em;
+    margin: 3em 0 0 16em;
+  }
+
+  button.pre-order1 {
+    margin: 0 0 1.5em 15em;
     width: 100px;
-    margin: 0 1.75rem;
+    padding: 5px;
+    font-size: 1.25em;
+  
   }
 
-  .pre-order {
-    margin-left: 20em;
-    margin-bottom: 1.5em;
-    padding: .5em 1em;
-  }
-
-  .divider3 {
-    margin-bottom: 8.5em;
+  .divider1, .divider2, .divider3 {
+    max-width: 80%;
+    margin-left: 10.5em;
   } 
+  
+ .divider3 {
+    margin-bottom: 3em;
+  } 
+
+  .hero .content-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+  
+  }
 
   .hero-image {
     background-size: cover;
-    height: 1300px;
-    margin: -20em 0 0 3em;
+    background-position: center;
+    width: 100%;
+    height: 700px;
+    margin: -10.5em 0 -3.5em 11em;
  }
 
- .hero h1 {
-  font-size: 2.5rem;
-  margin-right: 63%;
-}
-
-.hero h2 {
-  font-size: 2.5rem;
-  margin-right: 58%;
-
-}
-
-.hero p {
-  font-size: 2.5em;
-  margin-right: 28.5%;
-}
-
-p.para {
-  margin: 0;
-}
-
-.hero .para1 {
-  font-size: 1.8em;
-  margin: 1em 0 -4em 3em;
- }
-
-.hero button {
-  margin-left: 75em;
-  padding: 25px 75px;
-  font-size: 1.5em;
-  
+  .hero h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-right: 60%;
   }
+
+  .hero h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-right: 55.25%;
+
+  }
+  
+  .hero p {
+    font-size: 1.5em;
+    margin-right: 27%;
+  }
+
+  p.para {
+    margin:0;
+  }
+  
+ .hero .para1 {
+   font-size: 2.6em;
+   margin: 1.5em 0 0 3.5em;
+
+  }
+  
+  .hero button {
+    margin: 0 0 1em 75em;
+    width: 150px;
+    padding: 10px;
+    font-size: 1em;
+  }
+
 
   /* ---------------- Products Section ------------------- */
 
