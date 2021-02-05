@@ -11,1209 +11,1212 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-   *{
-     margin: 0;
-     padding: 0;
-   }
-   /*General Styles*/
-
-   :root { /*missing the helvica*/
-     /*Fonts*/
-     --ff1:'Tenor Sans', sans-serif;
-     --ff2:'Nunito', sans-serif;
-     --ff3: 'Montserrat', sans-serif;
-     --ff4:'Nothing You Could Do', cursive;
-     --ff5:'Roboto', sans-serif;
-     /*Colors*/
-     --clr1:#FFFFFF;
-     --clr2:#707070;
-     --clr3:#6D5A34;
-     --clr4:#85A76B;
-   }
-   
-body {
-     background-color: var(--clr1);
-   }
-   
-   a {
-     text-decoration: none;
-     color:var(--clr2);
-   }
-
-   span {
-     color:var(--clr4);
-   }
-
-   h1,
-   h2 {
-      color:var(--clr2);
-      font-family: var(--ff2);
-
-   }
-   .divider1,
-   .divider3 {
-     height:2px;
-     margin:.2em 0;
-     background: var(--clr2);
-   }
-
-   .divider2 {
-    height:2px;
-    margin:.1em 0;
-    background: var(--clr4);
-   }
-
-     /*Header Styles*/
-   nav {
-     color:var(--clr2);
-     font-family:var(--ff2);
-   
-   }
-
-   ul {
-    list-style-type: none;
-  }
-  
-    .logo p {
-     color:var(--clr3);
-     font-size: .75rem;
-    }
-
-    /*MAIN*/
-    .hero {
-      font-family:var(--ff2);
-    }
-
-    .hero p {
-      font-size:1.75rem ;
-      text-align:left; 
-      margin-left:1.2em;
-    }
-
-    button {
-      padding:.5em;
-      margin-left:8em;
-      border-radius: 4px;
-      width:40%;
-      background-color:var(--clr4);
-      color:var(--clr1);
-    }
-
-    .statement h1 {
-      font-size:2.7rem;
-      margin-left:1.2em;
-    }
-    /*products*/
-    .chair1{
-      margin-top:2em;
-    }
-
-/* --------------------- Mobile Styles - Homepage ------------------- */
-header .content-wrapper {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 95%;
-}
-
-nav ul {
-  display: flex;
-  margin: 0 0 2em 2em;
-  font-size: .75em;
-}
-
-nav ul li {
-  margin: 1em 0 0 .5em;
-}
-
-.logo .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.logo img {
-  width: 5.5em;
-  margin: 0 0 0 1em;
-}
-
-button.pre-order1 {
-  margin: 0 2em 2em  0;
-  width: 70px;
-  padding: 3px;
-  font-size: .75em;
-
-}
-
-.divider1, .divider2, .divider3 {
-  width: 90%;
-} 
-
-
-/* --------------------- Hero Section ------------------- */
-
-.hero .content-wrapper {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  width: 95%;
-
-}
-
-.hero h1,
-h2 {
-  margin-bottom: .15em;
-  font-size: 2rem;
-}
-
-.hero p {
-  font-size: 1.47em;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: .5em;
-}
-
-.hero-image {
-    background-image: url('../img/hero.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 350px;
-    height: 200px;
- }
-
-.hero .para1 {
-  font-size: 1.44em;
-  margin-bottom: -1.5em;
-}
-
-.hero button {
-  margin: 0 0 1em 10em;
-  width: 100px;
-  padding: 8px;
-  font-size: .75em;
-
-}
-
-/* -------------- Products Section ---------------- */
-
-.top-mission {
-  color:var(--clr2);
-  font-size: 42px;
-  font-family:var(--ff2);
-  padding:1.12em;
-  font-weight:lighter;
-  display: flex;
-}
-
-
-.products  {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  box-shadow: 10px 0px 10px #85a76b;
-  margin-top:3em;
-}
-
-
-.chair1 h3,
-.chair2 h3 {
-  margin-left: 6.5em;
-}
-
-input[type=button]  {
-  margin-left:6.5em;
-  margin-top: 2em;
-  border-radius:7px;
-  background:var(--clr4);
-  color: #EEEEEE;
-  padding: 15px;
-  text-transform:uppercase;
-  margin-bottom:4rem ;
-  box-shadow:5px 5px 5px #777777;
-}
-
-.chair2 input[type=button]  {
-  margin-left:6.5em;
-  margin-top: 2em;
-  border-radius:7px;
-  background:var(--clr4);
-  color: #EEEEEE;
-  padding: 15px;
-  text-transform:uppercase;
-  margin-bottom:4rem ;
-  box-shadow:5px 5px 5px #777777;
-}
-
-
-/*-------------------------- Footer ----------------------------*/
-.bottom-mission {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  color:var(--clr2);
-  font-family: var(--ff2);
-  font-size: 1.75em;
-  font-weight: 700;
-}
-
-.preorder {
-  margin: -50px;
-  padding-left: 120px;
-}
-
-.bottom-mission p {
-  line-height: 1.5em;
-  padding: 10px;
-}
-
-.image {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-}
-
-.about-sec {
-  font-size: 1em;
-  color:var(--clr2);
-  font-family: var(--ff2); 
-}
-
-.commitment {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  text-align:center;
-  line-height: 1.20em;
-  font-size: .95em;
-  letter-spacing:.2rem;
-  font-weight: 700;
-  padding: 20px 50px 0px 50px;
-  color:var(--clr2);
-  font-family: var(--ff2);
-}
-
-.commit-hdr h5 {
-  display:none;
-}
-
-.readmore {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 100px;
-}
-
-.chat, .arrow {
-  width: 95%;
-  display:flex;
-  justify-content:flex-end;
-  margin-bottom: 20px;
-}
-
-.newchair {
-  display:none;
-}
-
-.desktopsign{
-  display:none;
-}
-
-.signature {
-  padding-top: 10px;
-  font-family: var(--ff4);
-  font-size: 1.2em;
-}
-
-.divider1, .divider2, .divider3 {
-  margin-left: 20px;
-}
-
-.divider3 {
-  margin-bottom: 18px;
-}
-
-.footer {
-  display:flex;
-  flex-flow:row wrap;
-  justify-content: flex-start;
-  align-items:center;
-  background-color: var(--clr3);
-  width: 90%;
-  margin-left: 20px;
-  height: 170px;
-  margin-top: 20px;
-  margin-bottom: 0;
-}
-
-.footer-logo {
-  padding: 0;
-}
-
-.nav2 nav ul{
-  display:flex;
-  flex-flow:column wrap;
-  justify-content: center;
-  color:var(--clr1);
-  font-size: 1.5em;
-}
-
-.newsletter, .ordernow {
-  display:none;
-}
-
-.social {
-  display:flex;
-  flex-flow: row wrap;
-  /* margin-left: 270px;
-  margin-right: 5em;
-  margin-top: -120px;
-  padding-right: 1px; */
-  justify-content: space-between;
-  align-items: center;
-}
-
-.social a {
-  margin-left: 1.5em;
-}
-
-.nav2 ul li a {
-  color: var(--clr1);
-  font-size: 1.25em;
-}
- 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
-  display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
-
-/*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: " ";
-  display: table;
-}
-
-.clearfix::after {
-  clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-   @media only screen and (max-width: 35em) { /*For smaller screens*/
-    
-       
-      /* ------- Products Section -------- */
-    .top-mission figure,
-    .chair2 p,
-    .chair1 p { 
-     display:none;
-    }
-
-    }
-
-@media only screen and (min-width: 768px) and (max-width:1199px) {
-  /* Style adjustments for viewports that meet the condition */
-   
-    /* Tablet styles here */ 
-
-  nav ul li {
-    font-size: 1.5em;
-    margin-bottom: 1em;
-  }
-
-  .logo img {
-    width: 8.5em;
-    margin: 0 0 -1.5em 3.5em;
-  }
-
-  .logo p {
-    font-size: 1.5em;
-  }
-  
-  button.pre-order1 {
-    margin: 0 7em 2em  0;
-    width: 80px;
-    padding: 3px;
-  
-  }
-  
- .divider3 {
-    margin-bottom: 1.5em;
-  } 
-
-  .hero-image {
-    background-size: contain;
-    justify-content: center;
-    width: 100%;
-    height: 500px;
-    margin: -9.5em 0 -3.5em 0;
- }
-
-  .hero h1 {
-    font-size: 1rem;
-    font-weight: 700;
-    margin-right: 60%;
-  }
-
-  .hero h2 {
-    font-size: 1rem;
-    font-weight: 700;
-    margin-right: 53.1%;
-
-  }
-  
-  .hero p {
+   html {
+    color: #222;
     font-size: 1em;
-    margin-right: 14.1%;
+    line-height: 1.4;
   }
-
-  p.para {
+  
+  /*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Vendor-prefixed and regular ::selection selectors cannot be combined:
+   * https://stackoverflow.com/a/16982510/7133471
+   *
+   * Customize the background color to match your design.
+   */
+  
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  /*
+   * A better looking default horizontal rule
+   */
+  
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  
+  /*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+  
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+  
+  /*
+   * Remove default fieldset styles.
+   */
+  
+  fieldset {
+    border: 0;
     margin: 0;
+    padding: 0;
   }
   
- .hero .para1 {
-   font-size: 3.2em;
-   width: 92%;
-   margin-left: 1em;
-
+  /*
+   * Allow only vertical resizing of textareas.
+   */
+  
+  textarea {
+    resize: vertical;
   }
   
-  .hero button {
-    margin: 2em 0 .5em 25em;
-    width: 150px;
-    padding: 10px;
-    font-size: 1em;
-  }
-
-    /* ------------------- Products Section ------------------------- */
-   .top-mission figure {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
-  .top-mission p {
-    margin-left:1.2em;
-    font-size: 3.75rem;
-    line-height:59px;
-  }
-
-  .products {
-    box-shadow: none;
-    display:flex;
-  }
-
-
- /*chairs*/
-
-  .chair1 p,
-  .chair2 p {
-    display:none;
-  }
-
-
-  .chair1 {
-    align-items: center;
-    width:17.6em;
-    margin-bottom:3em;
-  }
-
-  .chair1 h3 {
-    margin-left: .25em;
-    margin-bottom: 2em;
- 
-  }
-
-  .chair1 img {
-    margin-right: .6em; 
-    margin-bottom:-10em;
-  }
-
-  input[type=button]  {
-    margin-top:4.75em;  
-  }
-
-  .chair2 {
-    width: 14.6em;
-    margin: 3em;
-  }
-
-  .chair2 h3 {
-    margin-left: 1em;
-    margin-bottom: 3em;
-
-  }
-
-  .chair2 img {
-    margin-right: -30em;
-    margin-bottom:-10em;
-  }
+  /* ==========================================================================
+     Author's custom styles
+     ========================================================================== */
+     *{
+       margin: 0;
+       padding: 0;
+     }
+     /*General Styles*/
   
-  .chair2 input[type=button]  {
-    margin-top: 2.6em;
-   
-  }
-  /*------------------- About section -----------------*/
-
-  .bottom-mission {
-    display:flex;
-    text-align:center;
-    margin-left: 40px;
-    width: 90%;
-    font-size: 3em;
-  } 
+     :root { /*missing the helvica*/
+       /*Fonts*/
+       --ff1:'Tenor Sans', sans-serif;
+       --ff2:'Nunito', sans-serif;
+       --ff3: 'Montserrat', sans-serif;
+       --ff4:'Nothing You Could Do', cursive;
+       --ff5:'Roboto', sans-serif;
+       /*Colors*/
+       --clr1:#FFFFFF;
+       --clr2:#707070;
+       --clr3:#6D5A34;
+       --clr4:#85A76B;
+     }
+     
+  body {
+       background-color: var(--clr1);
+     }
+     
+     a {
+       text-decoration: none;
+       color:var(--clr2);
+     }
   
-  .preorder {
-    display:none;
-  }
-
-  .ordernow {
-    display:inherit;
-    margin-left: 450px;
-    margin-top: -100px;
-  }
-
-  .commitment {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    /* text-align: center; */
-    width: 65%;
-    margin-left: 100px;
-    line-height: 1.72;
-  }
-
-  .commit-hdr h5 {
-    display:none;
-  }
+     span {
+       color:var(--clr4);
+     }
   
-  .image img{
-      height: 50%;
-      width: 80%;
+     h1,
+     h2 {
+        color:var(--clr2);
+        font-family: var(--ff2);
+  
+     }
+     .divider1,
+     .divider3 {
+       height:2px;
+       margin:.2em 0;
+       background: var(--clr2);
+     }
+  
+     .divider2 {
+      height:2px;
+      margin:.1em 0;
+      background: var(--clr4);
+     }
+  
+       /*Header Styles*/
+     nav {
+       color:var(--clr2);
+       font-family:var(--ff2);
+     
+     }
+  
+     ul {
+      list-style-type: none;
     }
+    
+      .logo p {
+       color:var(--clr3);
+       font-size: .75rem;
+      }
   
-  .newsletter {
-    display:flex;
-    flex-flow:column wrap;
-    margin-left: 40px;
-    width: 30%;
-  }
-
-  .newsletter .email {
-    background-color:var(--clr3);
-    border:1px solid var(--clr2);
-    display:flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    margin-bottom: 20px;
-    color:var(--clr2);
-    border-radius:2;
-    padding: 4px;
-    font-size: .75em;
-  }
-
-  .newsletter p {
-    margin-right: 20px;
-    color:var(--clr1);
-  }
-
-  .social {
-    display:flex;
-    justify-content:wrap;
-  }
-
-  .social a {
-    margin-right: 20px;
-  }
-}
-
-
-@media only screen and (min-width:1200px) {
-  /*Desktop styles here*/
-header .content-wrapper {
+      /*MAIN*/
+      .hero {
+        font-family:var(--ff2);
+      }
+  
+      .hero p {
+        font-size:1.75rem ;
+        text-align:left; 
+        margin-left:1.2em;
+      }
+  
+      button {
+        padding:.5em;
+        margin-left:8em;
+        border-radius: 4px;
+        width:40%;
+        background-color:var(--clr4);
+        color:var(--clr1);
+      }
+  
+      .statement h1 {
+        font-size:2.7rem;
+        margin-left:1.2em;
+      }
+      /*products*/
+      .chair1{
+        margin-top:2em;
+      }
+     
+     img {
+        width: 100%;
+     }
+  
+     /* --------------------- Mobile Styles - Homepage ------------------- */
+     header .content-wrapper {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    max-width: 80%;
+    width: 95%;
   }
   
   nav ul {
     display: flex;
-    margin: 0 0 2em 13em;
-    font-size: 1.5em;
+    margin: 0 0 2em 2em;
+    font-size: .75em;
   }
-
+  
+  nav ul li {
+    margin: 1em 0 0 .5em;
+  }
+  
+  .logo .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
   .logo img {
-    width: 15.5em;
-    margin: 3em 0 0 16em;
+    width: 5.5em;
+    margin: 0 0 0 1em;
   }
-
+  
   button.pre-order1 {
-    margin: 0 0 1.5em 15em;
-    width: 100px;
-    padding: 5px;
-    font-size: 1.25em;
+    margin: 0 2em 2em  0;
+    width: 70px;
+    padding: 3px;
+    font-size: .75em;
   
   }
-
+  
   .divider1, .divider2, .divider3 {
-    max-width: 80%;
-    margin-left: 10.5em;
+    width: 90%;
   } 
   
- .divider3 {
-    margin-bottom: 3em;
-  } 
-
+  
+  /* --------------------- Hero Section ------------------- */
+  
   .hero .content-wrapper {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    max-width: 80%;
+    width: 95%;
   
   }
-
-  .hero-image {
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 700px;
-    margin: -10.5em 0 -3.5em 11em;
- }
-
-  .hero h1 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-right: 60%;
-  }
-
-  .hero h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-right: 55.25%;
-
+  
+  .hero h1,
+  h2 {
+    margin-bottom: .15em;
+    font-size: 2rem;
   }
   
   .hero p {
-    font-size: 1.5em;
-    margin-right: 27%;
-  }
-
-  p.para {
-    margin:0;
+    font-size: 1.47em;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .5em;
   }
   
- .hero .para1 {
-   font-size: 2.6em;
-   margin: 1.5em 0 0 3.5em;
-
+  .hero-image {
+      background-image: url('../img/hero.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 350px;
+      height: 200px;
+   }
+  
+  .hero .para1 {
+    font-size: 1.41em;
   }
   
   .hero button {
-    margin: 0 0 1em 75em;
-    width: 150px;
-    padding: 10px;
-    font-size: 1em;
+    margin: 0 0 1em 11em;
+    width: 120px;
+    padding: 5px;
+    font-size: .75em;
   }
-
-
-  /* ---------------- Products Section ------------------- */
-
-  .top-mission figure {
-    width: 58%;
-    
+  
+  /* -------------- Products Section ---------------- */
+  
+  .top-mission {
+    color:var(--clr2);
+    font-size: 42px;
+    font-family:var(--ff2);
+    padding:1.12em;
+    font-weight:lighter;
+    display: flex;
   }
-
-  .top-mission p {
-    margin-left:1.2em;
-    font-size: 5.75rem;
-    line-height:5.625rem;
+  
+  
+  .products  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 10px 0px 10px #85a76b;
+    margin-top:3em;
   }
-
-
-.products {
-  box-shadow: none;  
-}
-
-.chair1 {
-  border:1px solid #85a76b;
-  margin-bottom:1em;
-}
-
-.chair1 h3 {
-  margin-left: 31em;
-  margin-top: .91em;
-  font-size:28px;
-}
-
-
-  .chair1 img {
-    margin-left: 40em;
-    width: 45%;
-  }
-
-  .chair1 h3 {
-    margin-left: 40em;/*50em*/
-    margin-top: 1em;
-    font-size:1.45rem;
-  }
-
-  .chair1 p {
-    margin-right: 33em;
-    margin-top:-24%;
-    padding:5%;
-    margin-left:3em;
-    font-size:1.125rem;
-    line-height:1.4em;
-  }
-
-  input[type=button] {
-    margin-top: 7px;
-    margin-right:23em;
-  }
-
-
-  .chair1,
-  .chair2 {
-    border: 1px solid #85A76B;
-
-  }
-
-  .chair2 img {
-    width: 45%;
-  }
-
+  
+  
+  .chair1 h3,
   .chair2 h3 {
-    margin-top: -2em;
-    margin-left:10em;
-    font-size:1.45rem;
+    margin-left: 6.5em;
   }
-
-  .chair2 p {
-    margin-left: 33em;
-    margin-top:-20%;
-    padding:5%;
-    font-size:1.125rem;
-    line-height:1.4em;
+  
+  input[type=button]  {
+    margin-left:6.5em;
+    margin-top: 2em;
+    border-radius:7px;
+    background:var(--clr4);
+    color: #EEEEEE;
+    padding: 15px;
+    text-transform:uppercase;
+    margin-bottom:4rem ;
+    box-shadow:5px 5px 5px #777777;
   }
-
-
-
-
-
-
-  /*------------------- About section -----------------*/
-  .bottom-mission p {
-      display:flex;
-      /* justify-content: flex-start; */
-      flex-flow: row wrap;
-      flex-wrap: wrap;
-      margin-left: 40px;
-      width: 90%;
-      font-size: 2em;
+  
+  .chair2 input[type=button]  {
+    margin-left:6.5em;
+    margin-top: 2em;
+    border-radius:7px;
+    background:var(--clr4);
+    color: #EEEEEE;
+    padding: 15px;
+    text-transform:uppercase;
+    margin-bottom:4rem ;
+    box-shadow:5px 5px 5px #777777;
   }
-
-  .bottom-mission span {
-    padding-right: 10px;
+  
+  
+  /*-------------------------- Footer ----------------------------*/
+  .bottom-mission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    color:var(--clr2);
+    font-family: var(--ff2);
+    font-size: 1.75em;
+    font-weight: 700;
   }
-
-  .about-sec {
-    display:flex;
-    justify-content:flex-start;
-    flex-flow:row wrap;
-    width: 50%;
-  }
-
+  
   .preorder {
+    margin: -50px;
+    padding-left: 120px;
+  }
+  
+  .bottom-mission p {
+    line-height: 1.5em;
+    padding: 10px;
+  }
+  
+  .image {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .about-sec {
+    font-size: 1em;
+    color:var(--clr2);
+    font-family: var(--ff2); 
+  }
+  
+  .commitment {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    line-height: 1.20em;
+    font-size: .95em;
+    letter-spacing:.2rem;
+    font-weight: 700;
+    padding: 20px 50px 0px 50px;
+    color:var(--clr2);
+    font-family: var(--ff2);
+  }
+  
+  .commit-hdr h5 {
     display:none;
   }
-
-  .newchair {
-    display:inherit;
-    margin-left: 60%;
+  
+  .readmore {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
   }
-
+  
+  .chat, .arrow {
+    width: 95%;
+    display:flex;
+    justify-content:flex-end;
+    margin-bottom: 20px;
+  }
+  
+  .newchair {
+    display:none;
+  }
+  
   .desktopsign{
-    display:inherit;
+    display:none;
+  }
+  
+  .signature {
     padding-top: 10px;
     font-family: var(--ff4);
     font-size: 1.2em;
   }
-
-  .image img {
-    height: 19em;
-    width: 27em;
-    margin-left: 50px;
-  }
-
-  .commitment {
-    display:flex;
-    flex-flow:row;
-    width: 300%;
-  }
-
-  .commitment p {
-    line-height: 1;
-    font-size: 2em;
-    padding: 50px;
-    margin-top: 50px;
-    margin-left: -220px;
-  }
-
-   .commit-hdr h5 {
-   display:inherit;
-   font-size: 2.5em;
-   width: 500%;
-   padding-left: 10px;
-   padding-top: 1em;
-   padding-left: 1em;
-   font-family: Georgia;
-   font-size: 2.75em;
-   font-weight: 400;
-  }
-
-  .readmore {
-    margin-left: 90%;
-  }
-
-  .signature {
-    display:none;
-  }
-
-  footer {
-    padding-top: 50px;
-  }
-
-  .about-sec {
-    display:flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    width: 90%;
-  }
-
-  .aboutit {
-    display: flex;
-    width: 100%;
-  }
-
-.chair2 {
-  border:1px solid #85a76b;
-  margin-left:-3.5em;
-}
-
-.chair2 h3 {
-  margin-top: -1.2em;
-  margin-left:7.5em;
-  font-size:28px;
-}
-
-.chair2 img {
-  width:40%;
-}
-
-.chair2 p {
-  margin-left: 33em;
-  margin-top:-20%;
-  padding:5%;
-  font-size:18px;
-  line-height:1.4em;
-}
-
-.chair2 input[type=button] {
-  margin-top: 7px;
-  margin-left:49em;
-}
-
-
+  
   .divider1, .divider2, .divider3 {
-    width: 120%;
+    margin-left: 20px;
   }
-
-  .chat, .arrow {
-    margin-left: 120px;
+  
+  .divider3 {
+    margin-bottom: 18px;
   }
-
-  .newsletter {
+  
+  .footer {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: flex-start;
+    align-items:center;
+    background-color: var(--clr3);
+    width: 90%;
+    margin-left: 20px;
+    height: 170px;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  
+  .footer-logo {
+    padding: 0;
+  }
+  
+  .nav2 nav ul{
     display:flex;
     flex-flow:column wrap;
-    margin-left: 40px;
-    width: 30%;
-  }
-
-  .newsletter .email {
-    background-color:var(--clr3);
-    border:1px solid var(--clr2);
-    display:flex;
-    flex-flow: column wrap;
     justify-content: center;
-    margin-bottom: 20px;
-    color:var(--clr2);
-    border-radius:2;
-    padding: 4px;
-    font-size: 1.15em;
-  }
-
-  .newsletter p {
-    margin-right: 20px;
     color:var(--clr1);
+    font-size: 1.5em;
+  }
+  
+  .newsletter, .ordernow {
+    display:none;
+  }
+  
+  .social {
+    display:flex;
+    flex-flow: row wrap;
+    /* margin-left: 270px;
+    margin-right: 5em;
+    margin-top: -120px;
+    padding-right: 1px; */
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .social a {
+    margin-left: 1.5em;
+  }
+  
+  .nav2 ul li a {
+    color: var(--clr1);
     font-size: 1.25em;
   }
-
-  .newsletter {
-    margin-left: 150px;
-  }
-
-  .social {
-    margin-left: 150px;
-  }
-
-  .social a {
-    margin-right: .5em;
-    margin-left: 1.20em;
-    font-size: 1em;
-  }
-
-
-}
-
-
-
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
+   
+  /* ==========================================================================
+     Helper classes
+     ========================================================================== */
+  
   /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
+   * Hide visually and from screen readers
    */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
+  
+  .hidden,
+  [hidden] {
+    display: none !important;
   }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
+  
   /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   * Hide only visually, but have it available for screen readers:
+   * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+   *
+   * 1. For long content, line feeds are not interpreted as spaces and small width
+   *    causes content to wrap 1 word per line:
+   *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
    */
-  thead {
-    display: table-header-group;
+  
+  .sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
   }
-
-  tr,
-  img {
-    page-break-inside: avoid;
+  
+  /*
+   * Extends the .sr-only class to allow the element
+   * to be focusable when navigated to via the keyboard:
+   * https://www.drupal.org/node/897638
+   */
+  
+  .sr-only.focusable:active,
+  .sr-only.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
   }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
+  
+  /*
+   * Hide visually and from screen readers, but maintain layout
+   */
+  
+  .invisible {
+    visibility: hidden;
   }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
+  
+  /*
+   * Clearfix: contain floats
+   *
+   * For modern browsers
+   * 1. The space content is one way to avoid an Opera bug when the
+   *    `contenteditable` attribute is included anywhere else in the document.
+   *    Otherwise it causes space to appear at the top and bottom of elements
+   *    that receive the `clearfix` class.
+   * 2. The use of `table` rather than `block` is only necessary if using
+   *    `:before` to contain the top-margins of child elements.
+   */
+  
+  .clearfix::before,
+  .clearfix::after {
+    content: " ";
+    display: table;
   }
-}
+  
+  .clearfix::after {
+    clear: both;
+  }
+  
+  /* ==========================================================================
+     EXAMPLE Media Queries for Responsive Design.
+     These examples override the primary ('mobile first') styles.
+     Modify as content requires.
+     ========================================================================== */
+     @media only screen and (max-width: 35em) { /*For smaller screens*/
+      
+         
+        /* ------- Products Section -------- */
+      .top-mission figure,
+      .chair2 p,
+      .chair1 p { 
+       display:none;
+      }
+  
+      }
+  
+  @media only screen and (min-width: 768px) and (max-width:1199px) {
+    /* Style adjustments for viewports that meet the condition */
+     
+      /* Tablet styles here */ 
+  
+    nav ul li {
+      font-size: 1.5em;
+      margin-bottom: 1em;
+    }
+  
+    .logo img {
+      width: 8.5em;
+      margin: 0 0 -1.5em 3.5em;
+    }
+  
+    .logo p {
+      font-size: 1.5em;
+    }
+    
+    button.pre-order1 {
+      margin: 0 7em 2em  0;
+      width: 80px;
+      padding: 3px;
+    
+    }
+    
+   .divider3 {
+      margin-bottom: 1.5em;
+    } 
+  
+    .hero-image {
+      background-size: contain;
+      justify-content: center;
+      width: 100%;
+      height: 500px;
+      margin: -9.5em 0 -3.5em 0;
+   }
+  
+    .hero h1 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-right: 60%;
+    }
+  
+    .hero h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-right: 53.1%;
+  
+    }
+    
+    .hero p {
+      font-size: 1em;
+      margin-right: 14.1%;
+    }
+  
+    p.para {
+      margin: 0;
+    }
+    
+   .hero .para1 {
+     font-size: 3.2em;
+     width: 92%;
+     margin-left: 1em;
+  
+    }
+    
+    .hero button {
+      margin: 2em 0 .5em 25em;
+      width: 150px;
+      padding: 10px;
+      font-size: 1em;
+    }
+  
+      /* ------------------- Products Section ------------------------- */
+     .top-mission figure {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .top-mission p {
+      margin-left:1.2em;
+      font-size: 3.75rem;
+      line-height:59px;
+    }
+  
+    .products {
+      box-shadow: none;
+      display:flex;
+    }
+  
+  
+   /*chairs*/
+  
+    .chair1 p,
+    .chair2 p {
+      display:none;
+    }
+  
+  
+    .chair1 {
+      align-items: center;
+      width:17.6em;
+      margin-bottom:3em;
+    }
+  
+    .chair1 h3 {
+      margin-left: .25em;
+      margin-bottom: 2em;
+   
+    }
+  
+    .chair1 img {
+      margin-right: .6em; 
+      margin-bottom:-10em;
+    }
+  
+    input[type=button]  {
+      margin-top:4.75em;  
+    }
+  
+    .chair2 {
+      width: 14.6em;
+      margin: 3em;
+    }
+  
+    .chair2 h3 {
+      margin-left: 1em;
+      margin-bottom: 3em;
+  
+    }
+  
+    .chair2 img {
+      margin-right: -30em;
+      margin-bottom:-10em;
+    }
+    
+    .chair2 input[type=button]  {
+      margin-top: 2.6em;
+     
+    }
+    /*------------------- About section -----------------*/
+  
+    .bottom-mission {
+      display:flex;
+      text-align:center;
+      margin-left: 40px;
+      width: 90%;
+      font-size: 3em;
+    } 
+    
+    .preorder {
+      display:none;
+    }
+  
+    .ordernow {
+      display:inherit;
+      margin-left: 450px;
+      margin-top: -100px;
+    }
+  
+    .commitment {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      /* text-align: center; */
+      width: 65%;
+      margin-left: 100px;
+      line-height: 1.72;
+    }
+  
+    .commit-hdr h5 {
+      display:none;
+    }
+    
+    .image img{
+        height: 50%;
+        width: 80%;
+      }
+    
+    .newsletter {
+      display:flex;
+      flex-flow:column wrap;
+      margin-left: 40px;
+      width: 30%;
+    }
+  
+    .newsletter .email {
+      background-color:var(--clr3);
+      border:1px solid var(--clr2);
+      display:flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      margin-bottom: 20px;
+      color:var(--clr2);
+      border-radius:2;
+      padding: 4px;
+      font-size: .75em;
+    }
+  
+    .newsletter p {
+      margin-right: 20px;
+      color:var(--clr1);
+    }
+  
+    .social {
+      display:flex;
+      justify-content:wrap;
+    }
+  
+    .social a {
+      margin-right: 20px;
+    }
+  }
+  
+  
+  @media only screen and (min-width:1200px) {
+    /*Desktop styles here*/
+  header .content-wrapper {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      max-width: 80%;
+    }
+    
+    nav ul {
+      display: flex;
+      margin: 0 0 2em 13em;
+      font-size: 1.5em;
+    }
+  
+    .logo img {
+      width: 15.5em;
+      margin: 3em 0 0 16em;
+    }
+  
+    button.pre-order1 {
+      margin: 0 0 1.5em 15em;
+      width: 100px;
+      padding: 5px;
+      font-size: 1.25em;
+    
+    }
+  
+    .divider1, .divider2, .divider3 {
+      max-width: 80%;
+      margin-left: 10.5em;
+    } 
+    
+   .divider3 {
+      margin-bottom: 3em;
+    } 
+  
+    .hero .content-wrapper {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      max-width: 80%;
+    
+    }
+  
+    .hero-image {
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 700px;
+      margin: -10.5em 0 -3.5em 11em;
+   }
+  
+    .hero h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-right: 60%;
+    }
+  
+    .hero h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-right: 55.25%;
+  
+    }
+    
+    .hero p {
+      font-size: 1.5em;
+      margin-right: 27%;
+    }
+  
+    p.para {
+      margin:0;
+    }
+    
+   .hero .para1 {
+     font-size: 2.6em;
+     margin: 1.5em 0 0 3.5em;
+  
+    }
+    
+    .hero button {
+      margin: 0 0 1em 75em;
+      width: 150px;
+      padding: 10px;
+      font-size: 1em;
+    }
+  
+  
+    /* ---------------- Products Section ------------------- */
+  
+    .top-mission figure {
+      width: 58%;
+      
+    }
+  
+    .top-mission p {
+      margin-left:1.2em;
+      font-size: 5.75rem;
+      line-height:5.625rem;
+    }
+  
+  
+  .products {
+    box-shadow: none;  
+  }
+  
+  .chair1 {
+    border:1px solid #85a76b;
+    margin-bottom:1em;
+  }
+  
+  .chair1 h3 {
+    margin-left: 31em;
+    margin-top: .91em;
+    font-size:28px;
+  }
+  
+  
+    .chair1 img {
+      margin-left: 40em;
+      width: 45%;
+    }
+  
+    .chair1 h3 {
+      margin-left: 40em;/*50em*/
+      margin-top: 1em;
+      font-size:1.45rem;
+    }
+  
+    .chair1 p {
+      margin-right: 33em;
+      margin-top:-24%;
+      padding:5%;
+      margin-left:3em;
+      font-size:1.125rem;
+      line-height:1.4em;
+    }
+  
+    input[type=button] {
+      margin-top: 7px;
+      margin-right:23em;
+    }
+  
+  
+    .chair1,
+    .chair2 {
+      border: 1px solid #85A76B;
+  
+    }
+  
+    .chair2 img {
+      width: 45%;
+    }
+  
+    .chair2 h3 {
+      margin-top: -2em;
+      margin-left:10em;
+      font-size:1.45rem;
+    }
+  
+    .chair2 p {
+      margin-left: 33em;
+      margin-top:-20%;
+      padding:5%;
+      font-size:1.125rem;
+      line-height:1.4em;
+    }
+  
+  
+  
+  
+  
+  
+    /*------------------- About section -----------------*/
+    .bottom-mission p {
+        display:flex;
+        /* justify-content: flex-start; */
+        flex-flow: row wrap;
+        flex-wrap: wrap;
+        margin-left: 40px;
+        width: 90%;
+        font-size: 2em;
+    }
+  
+    .bottom-mission span {
+      padding-right: 10px;
+    }
+  
+    .about-sec {
+      display:flex;
+      justify-content:flex-start;
+      flex-flow:row wrap;
+      width: 50%;
+    }
+  
+    .preorder {
+      display:none;
+    }
+  
+    .newchair {
+      display:inherit;
+      margin-left: 60%;
+    }
+  
+    .desktopsign{
+      display:inherit;
+      padding-top: 10px;
+      font-family: var(--ff4);
+      font-size: 1.2em;
+    }
+  
+    .image img {
+      height: 19em;
+      width: 27em;
+      margin-left: 50px;
+    }
+  
+    .commitment {
+      display:flex;
+      flex-flow:row;
+      width: 300%;
+    }
+  
+    .commitment p {
+      line-height: 1;
+      font-size: 2em;
+      padding: 50px;
+      margin-top: 50px;
+      margin-left: -220px;
+    }
+  
+     .commit-hdr h5 {
+     display:inherit;
+     font-size: 2.5em;
+     width: 500%;
+     padding-left: 10px;
+     padding-top: 1em;
+     padding-left: 1em;
+     font-family: Georgia;
+     font-size: 2.75em;
+     font-weight: 400;
+    }
+  
+    .readmore {
+      margin-left: 90%;
+    }
+  
+    .signature {
+      display:none;
+    }
+  
+    footer {
+      padding-top: 50px;
+    }
+  
+    .about-sec {
+      display:flex;
+      justify-content: center;
+      flex-flow: row wrap;
+      width: 90%;
+    }
+  
+    .aboutit {
+      display: flex;
+      width: 100%;
+    }
+  
+  .chair2 {
+    border:1px solid #85a76b;
+    margin-left:-3.5em;
+  }
+  
+  .chair2 h3 {
+    margin-top: -1.2em;
+    margin-left:7.5em;
+    font-size:28px;
+  }
+  
+  .chair2 img {
+    width:40%;
+  }
+  
+  .chair2 p {
+    margin-left: 33em;
+    margin-top:-20%;
+    padding:5%;
+    font-size:18px;
+    line-height:1.4em;
+  }
+  
+  .chair2 input[type=button] {
+    margin-top: 7px;
+    margin-left:49em;
+  }
+  
+  
+    .divider1, .divider2, .divider3 {
+      width: 120%;
+    }
+  
+    .chat, .arrow {
+      margin-left: 120px;
+    }
+  
+    .newsletter {
+      display:flex;
+      flex-flow:column wrap;
+      margin-left: 40px;
+      width: 30%;
+    }
+  
+    .newsletter .email {
+      background-color:var(--clr3);
+      border:1px solid var(--clr2);
+      display:flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      margin-bottom: 20px;
+      color:var(--clr2);
+      border-radius:2;
+      padding: 4px;
+      font-size: 1.15em;
+    }
+  
+    .newsletter p {
+      margin-right: 20px;
+      color:var(--clr1);
+      font-size: 1.25em;
+    }
+  
+    .newsletter {
+      margin-left: 150px;
+    }
+  
+    .social {
+      margin-left: 150px;
+    }
+  
+    .social a {
+      margin-right: .5em;
+      margin-left: 1.20em;
+      font-size: 1em;
+    }
+  
+  
+  }
+  
+  
+  
+  
+  @media print,
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+  }
+  
+  /* ==========================================================================
+     Print styles.
+     Inlined to avoid the additional HTTP request:
+     https://www.phpied.com/delay-loading-your-print-css/
+     ========================================================================== */
+  
+  @media print {
+    *,
+    *::before,
+    *::after {
+      background: #fff !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+  
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+  
+    a[href]::after {
+      content: " (" attr(href) ")";
+    }
+  
+    abbr[title]::after {
+      content: " (" attr(title) ")";
+    }
+  
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+      content: "";
+    }
+  
+    pre {
+      white-space: pre-wrap !important;
+    }
+  
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+  
+    /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+      display: table-header-group;
+    }
+  
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+  
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+  
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
+  }
+  
