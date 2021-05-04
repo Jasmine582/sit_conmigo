@@ -1,2 +1,2 @@
 # sit_conmigo
-Cross-over collaboration within the SkillCrush community. Design is by Angela Y Barber
+Cross-over collaboration within the SkillCrush community. Designed by Angela Y Barber
